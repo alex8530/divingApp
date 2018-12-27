@@ -14,8 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="ic_logo_internal" />
-                            <entry key="sourceFile" value="C:\Users\JustDoIt\Downloads\logo_internal.svg" />
+                            <entry key="outputName" value="ic_back_btton_right" />
+                            <entry key="sourceFile" value="C:\Users\JustDoIt\Desktop\svg\back_btton_right.svg" />
                           </map>
                         </option>
                       </PersistentState>
