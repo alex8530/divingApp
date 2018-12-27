@@ -12,7 +12,7 @@ public class EditProfile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.layout_a_edit_profile);
 
         Spinner s1 =   findViewById(R.id.spinner);
 

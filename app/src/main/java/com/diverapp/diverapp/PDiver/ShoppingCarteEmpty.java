@@ -27,6 +27,6 @@ public class ShoppingCarteEmpty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setStatusBarGradiant(this);
-        setContentView(R.layout.activity_shopping_carte_empty);
+        setContentView(R.layout.layout_a_shopping_carte_empty);
     }
 }
