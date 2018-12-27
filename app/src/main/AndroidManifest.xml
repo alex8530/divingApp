@@ -85,6 +85,7 @@
 
         <activity android:name=".LogoActivity" />
         <activity android:name=".PDiver.EditProfile" />
+        <activity android:name=".PDiver.ShoppingCarteEmpty"></activity>
     </application>
 
 </manifest>
