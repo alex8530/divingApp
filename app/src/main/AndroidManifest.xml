@@ -83,7 +83,8 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".LogoActivity"></activity>
+        <activity android:name=".LogoActivity" />
+        <activity android:name=".PDiver.EditProfile" />
     </application>
 
 </manifest>
