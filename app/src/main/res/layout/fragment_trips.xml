@@ -2,28 +2,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bgColor"
     tools:context="com.diverapp.diverapp.Admin.TripsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="10dp">
 
-        </Spinner>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="100"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/flashlight"/>
+                <EditText
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:fontFamily="@font/helveticaneuew23forsky_reg"
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_marginRight="-80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ابحث عن أفضل الرحلات .."
+                    android:textColorHint="#bfbfbf"
+                    android:background="@null"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
         <android.support.v7.widget.RecyclerView
+
             android:id="@+id/tripsList"
-            android:layout_marginTop="4dp"
+            android:paddingRight="37dp"
+            android:paddingLeft="37dp"
+            android:layout_marginTop="31dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
         </android.support.v7.widget.RecyclerView>
+
     </LinearLayout>
+
 
 </FrameLayout>

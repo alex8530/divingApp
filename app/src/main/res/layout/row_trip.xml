@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+   android:layout_gravity="right"
+    android:gravity="right"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:textSize="15sp"
+            android:textColor="#1C608D"
+            android:textStyle="bold"
+            android:fontFamily="@font/helveticaneuew23forsky_reg"
+            android:text="اسم الرحلة"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textDirection="rtl"
+            android:textSize="17sp"
+            android:textColor="#0d912c"
+            android:textStyle="bold"
+            android:fontFamily="@font/helveticaneuew23forsky_reg"
+            android:text="٢٠٠ ر.س"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="#909090"
+            android:maxLines="4"
+            android:singleLine="false"
+            android:text="وصف قصير عن الرحلة "/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saudi Arabia, Jeddah"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الموقع"
+
+                android:textColor="#2980ba"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_location"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="العدد المتبقي :"
+                android:textColor="#2980ba"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/ic_location"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="115dp"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:src="@drawable/item_row_img"/>
+</LinearLayout>
