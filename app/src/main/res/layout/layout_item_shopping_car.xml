@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="17dp"
+    android:gravity="right"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textDirection="rtl"
+            android:textStyle="bold"
+            android:textColor="#1c608d"
+            android:textSize="17sp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/helveticaneuew23forsky_reg"
+            android:text="اسم الرحلة"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textDirection="rtl"
+            android:textColor="#a3a3a3"
+            android:textSize="17sp"
+            android:layout_marginRight="88dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:fontFamily="@font/helveticaneuew23forsky_reg"
+            android:text="تذاكر4"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textDirection="rtl"
+            android:textSize="17sp"
+            android:textColor="#0d912c"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:fontFamily="@font/helveticaneuew23forsky_reg"
+            android:text="ر.س 100"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>
