@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.PanddingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/numberOfUsers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The moste active user:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/theMosteActiveUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Users:"
+                android:textSize="21dp"
+                android:fontFamily="@font/montserrat_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of divers: "
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/numberOfDivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of pro divers : "
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/numberOfProDivers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trips:"
+                android:textSize="21dp"
+                android:fontFamily="@font/montserrat_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of active trips:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/numberofActiveTrips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of Trips:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/numberOfTrips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diving from the beach:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/divingFromBeatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users: "
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diving from the boat: "
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/divingFromBoat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Diving courses: "
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+                <TextView
+                    android:id="@+id/divingCourses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Active Users:"
+                    android:layout_weight="1"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/montserrat_regular"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

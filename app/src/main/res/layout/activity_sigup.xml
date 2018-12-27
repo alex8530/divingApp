@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diverapp.diverapp.SignupLogin.SigupActivity"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_assetlogo" />
+        <EditText
+            android:layout_marginTop="6dp"
+            android:id="@+id/signupEmail"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/ic_mail"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/signupName"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="Your Name"
+            android:inputType="text"/>
+
+        <EditText
+            android:layout_marginTop="6dp"
+            android:id="@+id/signupPassword"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit"
+            android:drawableLeft="@drawable/ic_password"
+            android:hint="Your Password"
+            android:inputType="text"
+            android:password="true" />
+        <Button
+            android:layout_marginTop="18dp"
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_bg"
+            android:text="Next"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textColor="@drawable/button_text"
+            android:textSize="19dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/termsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/checkBoxStyle"
+                android:buttonTint="@color/blueColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="I agree to " />
+            <TextView
+                android:id="@+id/iAcceptPrivacyEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/blueColor"
+                android:text="the Terms and Conditions " />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="end"
+                    android:text="You alredy " />
+                <TextView
+                    android:id="@+id/youAlredyHaveAccountEmailSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blueColor"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="have an Account Login" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

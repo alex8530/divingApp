@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PDiver.AddTripFragment"
+    android:background="@color/bgColor"
+    android:fitsSystemWindows="true"
+    android:id="@+id/addTripe"
+    android:windowSoftInputMode="adjustNothing">
+
+    <LinearLayout
+        android:id="@+id/progressBar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/progressBarInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Uploading Images" />
+
+        <ProgressBar
+            android:id="@+id/uplodingProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:background="@drawable/progress_bar"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="246dp" />
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Trip name:"
+            android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/tripNameTF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter trip name"
+                android:fontFamily="@font/montserrat_regular" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Trip type:"
+                android:layout_marginBottom="10dp"/>
+            <Spinner
+                android:id="@+id/tripType"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentEnd="true"
+                app:layout_constraintTop_toBottomOf="@+id/tripNameTF">
+            </Spinner>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Location:"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/locationButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter trip name"
+                android:fontFamily="@font/montserrat_regular" />
+            <!--<Button-->
+                <!--android:id="@+id/locationButton"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:text="Selecte location"-->
+                <!--android:padding="10dp"-->
+                <!--android:fontFamily="@font/montserrat_regular"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@drawable/button_text"-->
+                <!--android:background="@drawable/small_button"-->
+                <!--android:drawableRight="@drawable/ic_add_black_24dp"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Description:"
+                android:layout_marginBottom="10dp"/>
+            <EditText
+                android:id="@+id/trip_description_TV"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:inputType="textMultiLine"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Start date:"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/startDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Select start date"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+                android:textColor="@drawable/button_text"
+                android:background="@drawable/small_button"
+                android:drawableRight="@drawable/ic_add_black_24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="End date:"/>
+            <Button
+                android:id="@+id/endDateTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Select end date"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+
+                android:textColor="@drawable/button_text"
+                android:background="@drawable/small_button"
+                android:drawableRight="@drawable/ic_add_black_24dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Ticket number:"/>
+            <EditText
+                android:id="@+id/ticketNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ticket#"
+                android:fontFamily="@font/montserrat_regular"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/minmmumTicketNumberTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Minimumm ticket number:"/>
+            <EditText
+                android:id="@+id/minmmumTicketNumber"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Minimmum ticket number"
+                android:fontFamily="@font/montserrat_regular"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Price:"/>
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter price"
+                android:inputType="number"
+                android:maxLines="1"
+                android:fontFamily="@font/montserrat_regular"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Trip images:"/>
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="80dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_height="80dp"
+                    android:padding="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_assetlogo" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="3dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_assetlogo" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="80dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:layout_height="80dp"
+                    android:padding="3dp"
+                    android:background="@drawable/ic_assetlogo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/condtionAndTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+                <CheckBox
+                    android:id="@+id/proDiverCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkBoxStyle"
+                    android:buttonTint="@color/blueColor"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="I agree to " />
+                <TextView
+                    android:id="@+id/iAcceptPrivacyEmailPro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textColor="@color/blueColor"
+                    android:text="the Terms and Conditions " />
+            </LinearLayout>
+            <Button
+                android:id="@+id/sendTripButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="Send Trip"
+                android:layout_marginBottom="40dp"
+                android:textColor="@drawable/button_text"/>
+        </LinearLayout>
+    </ScrollView>
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/Loader"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/bgColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            style="@style/AVLoadingIndicatorView"
+            android:visibility="visible"
+            app:indicatorName="BallScaleMultipleIndicator"
+            app:indicatorColor="@color/blueColor"
+            />
+        <TextView
+            android:id="@+id/LoaderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading...."
+            android:textSize="21dp"
+            android:fontFamily="@font/montserrat_semi_bold"/>
+    </LinearLayout>
+</FrameLayout>

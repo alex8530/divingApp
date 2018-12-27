@@ -1,0 +1,284 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diverapp.diverapp.SignupLogin.CompleteProfileFragment"
+    android:background="@color/bgColor">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Name:"
+                    android:layout_marginBottom="10dp"/>
+                <EditText
+                    android:id="@+id/completeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="Enter your real name"
+                    android:fontFamily="@font/montserrat_regular" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="this what will apear on your profil"
+                    android:textAlignment="textEnd"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone number:"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/completePhone"
+                        android:layout_weight="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:hint="+96555550541"
+                        android:textSize="18dp"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:inputType="phone" />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/add_phone"
+                        android:text="Add new"
+
+                        android:background="@drawable/small_button"
+                        android:textColor="@color/white"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birth:"
+                    android:textSize="18dp"
+                    android:maxLines="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:id="@+id/completePickDate"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold"/>
+                <!--<Button-->
+                <!--android:id="@+id/completePickDate"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:text="Select your birthday"-->
+                <!--android:padding="10dp"-->
+
+                <!--android:fontFamily="@font/montserrat_regular"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="@drawable/button_text"-->
+                <!--android:background="@drawable/small_button"-->
+                <!--android:drawableRight="@drawable/ic_add_black_24dp"/>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="National ID or Iqama:"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp" />
+                <Button
+                    android:id="@+id/completePickFileId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pick a file"
+                    android:background="@drawable/small_button"
+                    android:padding="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@drawable/button_text"
+                    android:drawableRight="@drawable/ic_add_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/paypalTag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Bank Account info:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your PayPal clint id"
+                    android:textSize="18dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:id="@+id/payPalClintID"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Bio:"
+                    android:id="@+id/bio_tv"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your Bio"
+                    android:textSize="18dp"
+                    android:maxLines="1"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:id="@+id/Bio_edit"
+                    android:layout_marginBottom="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Diving ID:" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                    android:id="@+id/completeDivingID"
+                    android:layout_width="0dp"
+                        android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:hint="Enter your diving Diving ID "
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp"/>
+                <ImageButton
+                    android:id="@+id/add_new_diving"
+                    android:layout_weight="0.6"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_add_black_24dp"
+                    />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/divingOrganizaion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp"
+                    android:text="Diving Organization:" />
+                <EditText
+                    android:id="@+id/completeDivingOrganiztion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your diving organization"
+                    android:textSize="18dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="Diving level:" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your diving level"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:id="@+id/completeDivingLevel"
+                    android:layout_marginBottom="15dp"/>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <CheckBox
+                        android:id="@+id/checkBoxCompleteProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/checkBoxStyle"
+                        android:buttonTint="@color/blueColor"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:text="I agree to " />
+                    <TextView
+                        android:id="@+id/iAcceptPrivacyEmailCompleteProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:textColor="@color/blueColor"
+                        android:text="the Terms and Conditions " />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/completePostButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Complete Profile"
+                    android:background="@drawable/button_bg"
+                    android:padding="10dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textStyle="bold"
+                    android:textColor="@drawable/button_text"
+                    android:layout_marginBottom="30dp"/>
+            </LinearLayout>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="200dp"
+                android:id="@+id/progress_bar"/>
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

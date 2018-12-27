@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp">
+        <ImageView
+            android:id="@+id/tripImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/place_holder_image"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:paddingLeft="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tripName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="19dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="userName"/>
+            <TextView
+                android:id="@+id/tripDiscreption"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:layout_weight="1"
+                android:text="userName"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

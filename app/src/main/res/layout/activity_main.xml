@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:windowSoftInputMode="adjustNothing"
+    tools:context=".MainActivity">
+
+<!--USER 0 -->
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_bar0"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mSkyColor"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@color/nav_items_color"
+        app:itemIconSize="46dp"
+        app:itemTextColor="@color/nav_items_color">
+        <!--USER 0/ -->
+    </android.support.design.widget.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/nav_bar0"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:id="@+id/Loader"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="visible"
+                app:indicatorName="BallScaleMultipleIndicator"
+                app:indicatorColor="@color/blueColor"
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

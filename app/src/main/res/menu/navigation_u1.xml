@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile_1"
+        android:icon="@drawable/ic_person_black_24dp" />
+    <item
+        android:id="@+id/nav_add_tripe_1"
+        android:icon="@drawable/ic_add_box_black_24dp" />
+    <item
+        android:id="@+id/nav_notif_1"
+        android:icon="@drawable/ic_notifications_black_24dp" />
+    <item
+        android:id="@+id/nav_showTrips0"
+        android:icon="@drawable/ic_assessment_black_24dp" />
+</menu>

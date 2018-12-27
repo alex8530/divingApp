@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_all_pDiver0"
+        android:icon="@drawable/ic_supervisor_account_black_24dp" />
+    <item
+        android:id="@+id/nav_noti0"
+        android:icon="@drawable/ic_dashboard_black_24dp" />
+
+    <item
+        android:id="@+id/nav_all_divers0"
+        android:icon="@drawable/ic_account_balance_black_24dp" />
+    <item
+        android:id="@+id/nav_pending0"
+        android:icon="@drawable/ic_assessment_black_24dp" />
+</menu>

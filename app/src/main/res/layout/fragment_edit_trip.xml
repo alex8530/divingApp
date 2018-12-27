@@ -1,0 +1,232 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context="com.diverapp.diverapp.Admin.EditTripFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:orientation="vertical">
+            <!--USER INFO-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Info :"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="18dp"
+                android:textColor="@color/blueColor"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone:"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="055555555"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="18dp"
+                android:textColor="@color/blueColor"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip Info :"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+            <!--TRIP INFO-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+
+                android:id="@+id/tripN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="18dp"
+                android:textColor="@color/blueColor"
+                android:textStyle="bold"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discription:"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/discrip"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="Lorem apsom"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="14dp"
+                android:textColor="@color/blueColor"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location name :"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/locationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trip name "
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="14dp"
+                android:textColor="@color/blueColor"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of tickert :"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/ticketNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="14dp"
+                android:textColor="@color/blueColor"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/price10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1400"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="14dp"
+                android:textColor="@color/blueColor"
+                android:paddingBottom="4dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fillViewport="true"
+                android:measureAllChildren="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/firstImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/ic_assetlogo"/>
+                    <ImageView
+                        android:id="@+id/secondImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/ic_assetlogo"/>
+
+                    <ImageView
+                        android:id="@+id/therdImage"
+                        android:layout_width="200dp"
+                        android:adjustViewBounds="true"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/ic_assetlogo"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="215dp"-->
+                <!--android:fillViewport="true"-->
+                <!--android:background="@color/blueColor"></LinearLayout>-->
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price:"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="16dp"
+                android:paddingBottom="4dp"/>
+            <EditText
+                android:id="@+id/changPriceButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:fontFamily="@font/montserrat_semi_bold"/>
+            <Button
+                android:id="@+id/activeButton"
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:text="Activite"
+                android:textColor="@drawable/button_text"
+                android:background="@drawable/button_bg"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/rejectButton"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:text="Reject"
+                android:textColor="@drawable/button_text"
+                android:background="@drawable/button_red"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

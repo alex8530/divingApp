@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Diver App</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_noti" />
+    <string name="nav_notif">Notification</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_shop">Shopping</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_all_pDiver">All P.Divers</string>
+    <string name="nav_all_divers0">All Divers</string>
+    <string name="nav_pending0">Pending</string>
+    <string name="nav_noti0">Notifications</string>
+    <string name="nav_profile_1">Profile</string>
+    <string name="nav_add_tripe">Add Tripe</string>
+    <string name="nav_notif_1">Notification</string>
+    <string name="nav_shopping_2">Shopping</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search">search</string>
+    <string name="reply_text" />
+    <string name="notconnetion" />
+    <string name="chang_succ" />
+    <string name="save" />
+    <string name="searchfore" />
+    <string name="resend">resend</string>
+    <string name="tripDescription">Trip\'s Description</string>
+    <string name="ticketnum">Ticket Number</string>
+    <string name="prencipall">principal</string>
+</resources>

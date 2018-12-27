@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49C2C5</color>
+    <color name="colorPrimaryDark">#49C2C5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="bgColor">#F5F6F5</color>
+    <color name="whiteTransparns">#80ffffff</color>
+
+    <color name="textColor">#2980ba</color>
+    <color name="blueColor">#2980ba</color>
+    <color name="disabledButton">#277099</color>
+    <color name="mBlueWhite">#7fa6b7</color>
+
+    <color name="facebookButton">#204771</color>
+    <color name="emailButton">#ACD7EA</color>
+    <color name="phoneButton">#318FA3</color>
+    <color name="mSkyColor">#ACD7EA</color>
+    <color name="redColor">#ff4444</color>
+    <color name="redColorClicked">#cc0000</color>
+    <color name="checkedIcon">#B7B7B7</color>
+</resources>

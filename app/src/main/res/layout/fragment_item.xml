@@ -1,0 +1,381 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diverapp.diverapp.Diver.ItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ddscsdcdscsdd"
+                android:textSize="20dp"
+                android:fontFamily="@font/montserrat_semi_bold"/>
+            <TextView
+                android:id="@+id/description2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="sdcsdvsdvdsvkmsdvmsdvkdmsvkmdskvmsdsdvsovkokvdskvsdovkdsov"
+                android:textSize="17dp"
+                android:fontFamily="@font/montserrat_regular"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fillViewport="true"
+                android:measureAllChildren="false">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/firstImageItemFragment"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/ic_assetlogo"/>
+                    <ImageView
+                        android:id="@+id/secondImageItemFragment"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/ic_assetlogo"/>
+
+                    <ImageView
+                        android:id="@+id/therdImageItemFragment"
+                        android:layout_width="200dp"
+                        android:adjustViewBounds="true"
+                        android:layout_height="200dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/ic_assetlogo"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Trip info"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <!-- TRIP INFO -->
+            <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Location" />
+
+            <TextView
+            android:id="@+id/infoLocation"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_weight="1"
+            android:text="Jeddah"
+            android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Zero houre"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"/>
+
+            <TextView
+            android:id="@+id/infoZeroHoure"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="17:00 pm"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textAlignment="center" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:text="Price"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat_regular"/>
+
+                    <TextView
+                        android:id="@+id/priceTV"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:text="17:00 pm"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Number of seats"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"/>
+
+            <TextView
+            android:id="@+id/infoNumberOfTeckets"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textAlignment="center" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+            android:id="@+id/proDiver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Pro diver info"
+            android:textSize="18dp" />
+
+            <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/proDiver">
+
+            <LinearLayout
+            android:id="@+id/ProdiverInfo"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Name" />
+
+            <TextView
+            android:id="@+id/pInfoName"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Jeddah"
+            android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Last Trip" />
+
+            <TextView
+            android:id="@+id/pInfoLastTrip"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="17:00 pm"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:weightSum="2">
+
+            <TextView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:text="Rating"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"/>
+
+            <TextView
+            android:id="@+id/pInfoRating"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="4"
+            android:textAlignment="center" />
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Number of ticket "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+                    tools:layout_editor_absoluteX="16dp">
+
+                    <Button
+                        android:id="@+id/incrmonter"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="+" />
+
+                    <TextView
+
+                        android:id="@+id/numberOfTicket"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="1"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/decrmontor"
+                        android:layout_width="41dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add To Cart"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@drawable/button_text"
+                android:background="@drawable/button_bg"/>
+
+            <!--NUMBER OF TICKETS -->
+        </LinearLayout>
+            <!--&lt;!&ndash;- PRO DIVER &ndash;&gt;-->
+
+
+
+
+        <!--</android.support.constraint.ConstraintLayout>-->
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+
+    >
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+
+        android:text="إضافة رخصة جديدة"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/completeDivingID"
+         android:layout_width="match_parent"
+        android:layout_height="38.82dp"
+        android:layout_gravity="right"
+        android:maxLines="1"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+        android:textSize="12sp"
+         android:paddingLeft="67dp"
+        android:textColor="#49c2c5"
+        android:inputType="text"
+        android:hint="أدخل رقم هوية الغوص"
+         android:backgroundTint="#BFBFBF"
+
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/completePickFileDivingId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="أرفق صورة الرخصة"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+
+        android:textSize="12sp"
+         android:textStyle="bold"
+
+        android:textColor="@drawable/button_text"
+         />
+
+    <EditText
+        android:id="@+id/completeDivingOrganiztion"
+        android:layout_width="match_parent"
+        android:layout_height="38.82dp"
+        android:layout_gravity="right"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+
+        android:paddingLeft="67dp"
+        android:inputType="text"
+        android:textColor="#49c2c5"
+         android:hint="أدخل منظمة الغوص"
+         android:backgroundTint="#BFBFBF"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:id="@+id/completeDivingLevel"
+        android:layout_width="match_parent"
+        android:layout_height="38.82dp"
+        android:layout_gravity="right"
+        android:maxLines="1"
+        android:textSize="12sp"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+
+        android:paddingLeft="67dp"
+         android:inputType="text"
+        android:hint="أدخل مستوى الرخصة"
+        android:textColor="#49c2c5"
+         android:backgroundTint="#BFBFBF"
+        android:layout_marginBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/isprinc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+        android:button="@null"
+        android:gravity="right|center_vertical"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:layoutDirection="rtl"
+        android:textColor="#BFBFBF"
+
+        android:backgroundTint="#BFBFBF"
+        android:text="إجعلها الرخصة الأساسية"/>
+    <Button
+        android:id="@+id/addthisdrivingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="إضافة الرخصة"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/helveticaneuew23forsky_reg"
+        android:textStyle="bold"
+        android:textColor="@drawable/button_text"
+        android:layout_marginBottom="28dp"/>
+
+
+
+</LinearLayout>

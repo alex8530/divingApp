@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context="com.diverapp.diverapp.SignupLogin.PhoneSignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_assetlogo" />
+
+        <EditText
+            android:id="@+id/namePhoneSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edit"
+            android:drawableLeft="@drawable/ic_username"
+            android:hint="Enter your name"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/custom_edit"
+            android:drawableLeft="@drawable/ic_phone_ic"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:hint="966541022394 "
+            android:inputType="phone"
+            android:textSize="17dp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:text="You may receive a SMS message from  " />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp">
+            <CheckBox
+                android:id="@+id/termsCheckBoxPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/checkBoxStyle"
+                android:buttonTint="@color/blueColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="I agree to " />
+            <TextView
+                android:id="@+id/iAcceptPrivacyPhnoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/blueColor"
+                android:text="the Terms and Conditions " />
+        </LinearLayout>
+        <Button
+            android:id="@+id/signupButtonPhoneForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:background="@drawable/button_bg"
+            android:text="Next"
+            android:textColor="@drawable/button_text"
+            android:textSize="19dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="end"
+                    android:text="You alredy " />
+                <TextView
+                    android:id="@+id/youAlredyHaveAccountPhoneSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blueColor"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="have an Account Login" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

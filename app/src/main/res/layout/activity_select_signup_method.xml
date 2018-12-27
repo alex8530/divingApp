@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diverapp.diverapp.SignupLogin.SelectSignupMethodActivity"
+    android:background="@color/bgColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/signupMethodLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ic_assetlogo" />
+        <Button
+            android:layout_marginTop="18dp"
+            android:id="@+id/emailButtonSignupMethods"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="12dp"
+            android:text="Sign up with your email"
+            android:paddingLeft="10dp"
+
+            android:textColor="@drawable/button_text"
+            android:drawableLeft="@drawable/ic_black_email"
+            android:background="@drawable/signup_email_button" />
+
+        <Button
+            android:id="@+id/phoneButtonSignupMethods"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="12dp"
+            android:text="signup with you phone number"
+            android:layout_marginTop="8dp"
+            android:textColor="@drawable/button_text"
+            android:background="@drawable/signup_with_phon_bg" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="70dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="You you alraedy" />
+            <TextView
+                android:id="@+id/haveAccountSignupMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blueColor"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text=" have an account Login" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
