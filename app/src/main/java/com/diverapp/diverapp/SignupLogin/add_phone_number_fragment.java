@@ -79,8 +79,8 @@ import java.util.concurrent.TimeUnit;
             onRestoreInstanceState(savedInstanceState);
         }
 
-        mPhoneNumberViews = (ViewGroup) findViewById(R.id.phone_auth_fields);
-        mSignedInViews = (ViewGroup) findViewById(R.id.signed_in_buttons);
+//        mPhoneNumberViews = (ViewGroup) findViewById(R.id.phone_auth_fields);
+//        mSignedInViews = (ViewGroup) findViewById(R.id.signed_in_buttons);
 //
 //        mStatusText = (TextView) findViewById(R.id.status);
 //        mDetailText = (TextView) findViewById(R.id.detail);
@@ -91,7 +91,7 @@ import java.util.concurrent.TimeUnit;
         mStartButton = (Button) findViewById(R.id.button_start_verification);
         mVerifyButton = (Button) findViewById(R.id.button_verify_phone);
         mResendButton = (Button) findViewById(R.id.button_resend);
-        mSignOutButton = (Button) findViewById(R.id.sign_out_button);
+//        mSignOutButton = (Button) findViewById(R.id.sign_out_button);
 
         // Assign click listeners
         mStartButton.setOnClickListener(this);
@@ -394,9 +394,9 @@ import java.util.concurrent.TimeUnit;
             case R.id.button_resend:
                 resendVerificationCode(mPhoneNumberField.getText().toString(), mResendToken);
                 break;
-            case R.id.sign_out_button:
-                signOut();
-                break;
+//            case R.id.sign_out_button:
+//                signOut();
+//                break;
         }
     }
 

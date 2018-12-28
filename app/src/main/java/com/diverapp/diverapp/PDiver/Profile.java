@@ -3,6 +3,8 @@ package com.diverapp.diverapp.PDiver;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.diverapp.diverapp.R;
+
 public class Profile extends AppCompatActivity {
 
     @Override
