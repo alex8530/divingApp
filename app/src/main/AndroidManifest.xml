@@ -86,7 +86,8 @@
         <activity android:name=".LogoActivity" />
         <activity android:name=".PDiver.EditProfile" />
         <activity android:name=".PDiver.ShoppingCarteEmpty" />
-        <activity android:name=".PDiver.QRCodeReader"></activity>
+        <activity android:name=".PDiver.QRCodeReader" />
+        <activity android:name=".PDiver.Profile"></activity>
     </application>
 
 </manifest>

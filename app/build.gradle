@@ -69,6 +69,7 @@ dependencies {
 /*Add QR Library Here */
     implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
 
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 
 }
 

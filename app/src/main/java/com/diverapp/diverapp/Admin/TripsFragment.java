@@ -42,7 +42,7 @@ public class TripsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView = inflater.inflate(R.layout.fragment_trips, container, false);
+        View rootView = inflater.inflate(R.layout.layout_f_trips, container, false);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.tripsList);
         final TripCellAdapter tripCellAdapter = new TripCellAdapter(tripList,getContext(),this,users);
