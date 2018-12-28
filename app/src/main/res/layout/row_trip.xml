@@ -14,7 +14,8 @@
         android:layout_marginRight="16dp"
         android:orientation="vertical">
 
-        <TextView
+        <TextView                     android:id="@+id/tripNameTV"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textDirection="rtl"
@@ -27,6 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/price"
 
             android:textDirection="rtl"
             android:textSize="17sp"
@@ -40,6 +42,8 @@
             android:layout_height="wrap_content"
             android:textColorHint="#909090"
             android:maxLines="4"
+            android:id="@+id/description"
+
             android:singleLine="false"
             android:text="وصف قصير عن الرحلة "/>
         <LinearLayout
@@ -47,6 +51,8 @@
             android:layout_height="wrap_content">
             <TextView
                 android:layout_marginRight="5dp"
+                android:id="@+id/locationName"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Saudi Arabia, Jeddah"/>
@@ -68,6 +74,8 @@
                 android:layout_marginRight="5dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/ticketsTV"
+
                 android:text="40"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -83,6 +91,8 @@
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/tripImageView"
+
         android:layout_width="110dp"
         android:layout_height="115dp"
         android:layout_gravity="right"

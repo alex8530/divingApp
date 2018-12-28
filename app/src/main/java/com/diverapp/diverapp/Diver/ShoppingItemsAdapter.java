@@ -62,10 +62,10 @@ try {
             enddate = formatter.format(new Date(trip.getEndDate()));
         }catch (Exception exc){}
 //        String endDate = formatter.format(new Date(trip.getEndDate()));
-        shoppingItemsViewHolder.start.setText(dateString);
+//        shoppingItemsViewHolder.start.setText(dateString);
         double priceWithVat = trip.getPrice() + ((trip.getPrice() *5 ) / 100);
         shoppingItemsViewHolder.price.setText(String.valueOf(priceWithVat)+" RS");
-        shoppingItemsViewHolder.end.setText(enddate);
+//        shoppingItemsViewHolder.end.setText(enddate);
         shoppingItemsViewHolder.descrption.setText(trip.getDescription());
         shoppingItemsViewHolder.location.setText(trip.getLocationName());
 
@@ -91,8 +91,8 @@ try {
             itemView.setOnClickListener(this);
             nameText = (TextView) itemView.findViewById(R.id.tripNameTV);
             descrption = (TextView) itemView.findViewById(R.id.description);
-            start = (TextView) itemView.findViewById(R.id.startFrom);
-            end = (TextView) itemView.findViewById(R.id.endIn);
+//            start = (TextView) itemView.findViewById(R.id.startFrom);
+//            end = (TextView) itemView.findViewById(R.id.endIn);
             imageView = (ImageView) itemView.findViewById(R.id.tripImageView);
             tickets = (TextView) itemView.findViewById(R.id.ticketsTV);
             price = (TextView) itemView.findViewById(R.id.price);
