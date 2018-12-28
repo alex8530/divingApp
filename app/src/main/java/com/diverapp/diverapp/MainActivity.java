@@ -67,9 +67,9 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class MainActivity extends AppCompatActivity {
 
-/*
-ffgAA_dQYfM:APA91bHSwTfRnovV61BSYtkS5PNOQmuiosW3DHodaMOJ9pp5Wf0Pvri4czBIBxVZOr_ICdqvQm5wAIoLHrkVALc-qY3FybJBNLPq0uV2iYB_-FrDP2K1nIqpDTOjsxVYb3SeGSi94xrw
- */
+    /*
+    ffgAA_dQYfM:APA91bHSwTfRnovV61BSYtkS5PNOQmuiosW3DHodaMOJ9pp5Wf0Pvri4czBIBxVZOr_ICdqvQm5wAIoLHrkVALc-qY3FybJBNLPq0uV2iYB_-FrDP2K1nIqpDTOjsxVYb3SeGSi94xrw
+     */
     public static final String TAG = "YOUR-TAG-NAME";
     public FirebaseAuth mAuth;
     FirebaseUser user_;
@@ -87,7 +87,7 @@ ffgAA_dQYfM:APA91bHSwTfRnovV61BSYtkS5PNOQmuiosW3DHodaMOJ9pp5Wf0Pvri4czBIBxVZOr_I
     FetchTripsHelper fetchTripsHelper;
     FirebaseDatabase database;
     DatabaseReference myRef;
-   public static User user;
+    public static User user;
     AVLoadingIndicatorView avi;
     String TOKENID;
     private static final int NOTIFICATION_PERMISSION_CODE = 123;
@@ -98,9 +98,9 @@ ffgAA_dQYfM:APA91bHSwTfRnovV61BSYtkS5PNOQmuiosW3DHodaMOJ9pp5Wf0Pvri4czBIBxVZOr_I
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-user=new User();
+        user = new User();
         SharedPreferences prefs = getSharedPreferences("user", MODE_PRIVATE);
-        user.setType( prefs.getInt("usertype", -1));
+        user.setType(prefs.getInt("usertype", -1));
         loader = findViewById(R.id.Loader);
         fetchTripsHelper = new FetchTripsHelper();
 //        fetchTripsHelper.fetrfkmfgvfkmvc();
@@ -108,16 +108,16 @@ user=new User();
         cartFragment = new CartFragment();
         cartFragment.mainActivity = this;
         requestNotificationPermission();
-        setupLocationManager();
+//        setupLocationManager();
         avi = (AVLoadingIndicatorView) findViewById(R.id.avi);
 //        cartFragment.fetchAllTheOrder(getApplicationContext());
-        mCartItemCount= cartFragment.cart.size();
-        Log.e(TAG, "onCreatecartFragment: "+ cartFragment.cart.size());
+        mCartItemCount = cartFragment.cart.size();
+        Log.e(TAG, "onCreatecartFragment: " + cartFragment.cart.size());
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ACD7EA")));
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.ic_assetlogo);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
+//        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ACD7EA")));
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setLogo(R.drawable.ic_assetlogo);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
         SQLiteHelper sqLiteHelper = new SQLiteHelper(this);
         System.out.println("onCreate main");
         System.out.println("-- 1 onCreate");
@@ -125,9 +125,9 @@ user=new User();
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         TOKENID = FirebaseInstanceId.getInstance().getToken();
         mAuth = FirebaseAuth.getInstance();
-        user_=mAuth.getCurrentUser();
-        if(user_!=null)
-        user.setUid(user_.getUid());
+        user_ = mAuth.getCurrentUser();
+        if (user_ != null)
+            user.setUid(user_.getUid());
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("Users");
 
@@ -145,35 +145,38 @@ user=new User();
         // CREATE THE NAV
 
 
-
-
     }
+
     public void checkTheEmailVerfiy() {
-        Log.e(TAG, "checkTheEmailVerfiy: "+ mAuth.getCurrentUser().getEmail() );
-        if (mAuth.getCurrentUser().getEmail() != ""){
-            if (mAuth.getCurrentUser().isEmailVerified() == false){
+        Log.e(TAG, "checkTheEmailVerfiy: " + mAuth.getCurrentUser().getEmail());
+        if (mAuth.getCurrentUser().getEmail() != "") {
+            if (mAuth.getCurrentUser().isEmailVerified() == false) {
                 EmailStatusFragment emailStatusFragment = new EmailStatusFragment();
 
                 createAFragment(emailStatusFragment);
-            }else {
+            } else {
                 fetchUserFromDatabase();
             }
-        }else {
+        } else {
             fetchUserFromDatabase();
         }
 //        Toast.makeText(this, "email "+mAuth.getCurrentUser().isEmailVerified(), Toast.LENGTH_SHORT).show();
 
     }
-    private  MenuItem cart,scan;
+
+    private MenuItem cart, scan;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-            getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
 
         cart = menu.findItem(R.id.action_cart);
-scan=menu.findItem(R.id.action_scan);
-if(user.getType()==2){scan.setVisible(false);}
+        scan = menu.findItem(R.id.action_scan);
+        if (user.getType() == 2) {
+            scan.setVisible(false);
+        }
         View actionView = MenuItemCompat.getActionView(cart);
-          textCartItemCount = (TextView) actionView.findViewById(R.id.cart_badge);
+        textCartItemCount = (TextView) actionView.findViewById(R.id.cart_badge);
         setupBadge();
         actionView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -183,28 +186,31 @@ if(user.getType()==2){scan.setVisible(false);}
         });
         return true;
     }
+
     public void setupBadge() {
         if (textCartItemCount != null) {
             if (mCartItemCount == 0) {
                 textCartItemCount.setVisibility(View.GONE);
-            }else {
+            } else {
                 cart.setEnabled(true);
                 textCartItemCount.setText(String.valueOf(Math.min(mCartItemCount, 99)));
 
-                    textCartItemCount.setVisibility(View.VISIBLE);
+                textCartItemCount.setVisibility(View.VISIBLE);
 
             }
         }
     }
+
     CartFragment cartFragment;
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        Log.e(TAG, "onOptionsItemSelected: " );
+        Log.e(TAG, "onOptionsItemSelected: ");
         item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
-                Log.e(TAG, "onOptionsItemSelected: false" );
+                Log.e(TAG, "onOptionsItemSelected: false");
                 return false;
             }
         });
@@ -215,7 +221,7 @@ if(user.getType()==2){scan.setVisible(false);}
 
             // go to scan activity
         }
-            if (id == R.id.action_cart) {
+        if (id == R.id.action_cart) {
             try {
                 item.setEnabled(false);
 
@@ -229,12 +235,14 @@ if(user.getType()==2){scan.setVisible(false);}
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commitAllowingStateLoss();
                 return true;
-            }catch (Exception exp){}
+            } catch (Exception exp) {
+            }
         }
         return super.onOptionsItemSelected(item);
     }
+
     private void fetchUserFromDatabase() {
-       myRef.child(mAuth.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+        myRef.child(mAuth.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
@@ -254,12 +262,14 @@ if(user.getType()==2){scan.setVisible(false);}
 //                Log.d(TAG, "onDataChange fetchUserFromDatabase: "+ user);
 
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(getApplicationContext(), databaseError.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
+
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void setupLocationManager() {
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
@@ -308,7 +318,18 @@ if(user.getType()==2){scan.setVisible(false);}
         }
 
     }
+
     public void locationRequest() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 0, locationListener);
 
     }
